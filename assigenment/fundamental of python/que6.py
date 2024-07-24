@@ -1,32 +1,26 @@
 #  Write python program that swap two number with temp variable and without temp variable. 
 
-# # With a temporary variable:
-# swap_with_temp(a, b):
-#     temp = a
-#     a = b
-#     b = temp
-#     return a, b
+# without using temp variable
+num1= 10
+num2= 20
 
-# # Without a temporary variable:
-# swap_without_temp(a, b):
-#     a, b = b, a
-#     return a, b
+print(f"Before swaping : num1 = {num1} & num2 = {num2}")
+
+num1 = num1 + num2
+num2 = num1 - num2
+num1 = num1 - num2
+
+print(f"After swaping : num1 = {num1} & num2 = {num2}")
 
 
+# using temp variable
+num1= 10
+num2= 20
 
-# Swapping with temp 
-x = 5
-y = 10
+print(f"Before swaping : num1 = {num1} & num2 = {num2}")
 
-Create a temporary variable and swap the values
-temp = x
-x = y
-y = temp
+temp = num1
+num1 = num2
+num2 = temp
 
-print('The value of x after swapping:', x)
-print('The value of y after swapping:', y)
-
-# swapping without temp
-
-x = 5
-y = 10
+print(f"After swaping : num1 = {num1} & num2 = {num2}")

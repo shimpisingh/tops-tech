@@ -1,10 +1,11 @@
-#Write a Python program to get a single string from two given strings,
-#separated by a space and swap the first two characters of each string
+# Write a Python program to get a single string from two given strings, separated by a space and swap
+# the first two characters of each string. 
 
-def chars_mix_up(a, b):
-    new_a = b[:2] + a[2:]
-    new_b = a[:2] + b[2:]
-    return new_a + ' ' + new_b
+string1 = input("Enter string1 : ")
+string2 = input("Enter string2 : ")
 
-result = chars_mix_up('abc', 'xyz')
-print(result) 
+str1_swap = string1[:3] + string2[3:]
+str2_swap = string2[:3] + string1[3:]
+
+result = str1_swap + " " + str3_swap
+print(result)
